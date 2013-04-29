@@ -8,12 +8,19 @@ then
     --pretty=format:"%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset"
 fi
 
-if (`git push --quiet`)
+if !(`git push`)
 then
-  echo 'works'
+  echo 'failed'
 else
-  echo 'fails'
+  echo 'passed'
 fi
+
+#if (`git push --quiet`)
+#then
+#  echo 'works'
+#else
+#  echo 'fails'
+#fi
 
 if test -e .
 then
