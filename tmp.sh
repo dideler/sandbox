@@ -10,10 +10,10 @@ fi
 
 if !(`git push`)
 then
-  echo 'failed'
-else
-  echo 'passed'
+  echo ' ! [aborted] failed'
+  exit 1
 fi
+echo 'passed'
 
 #if (`git push --quiet`)
 #then
