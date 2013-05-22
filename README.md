@@ -1,6 +1,4 @@
 test-repo
 =========
 
-For experimenting with GitHub
-
-abcdef
+I kept this as a private repo to prevent spamming others' feeds, but now my free student account has expired :(
